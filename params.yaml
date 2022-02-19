@@ -1,7 +1,7 @@
 base:
   project: Admission_prediction-project
   random_state: 1
-  target_col: Chance of Admit
+  target_col: Chance_of_Admit
 
 data_source:
   #s3_source: data_given/Admission_Prediction.csv
@@ -12,8 +12,10 @@ load_data:
   raw_dataset_csv: C:\Users\VIMALA P T\OneDrive\Documents\Python anaconda\Ineuron\projects\MLOPS\Mlops-task\data\raw\Admission_Prediction.csv
 
 split_data:
-  train_path: data/processed/train_Admission_Prediction.csv
-  test_path: data/processed/test_Admission_Prediction.csv
+  #train_path: data/processed/train_Admission_Prediction.csv
+  train_path: C:\Users\VIMALA P T\OneDrive\Documents\Python anaconda\Ineuron\projects\MLOPS\Mlops-task\data\processed\train_Admission_Prediction.csv
+  #test_path: data/processed/test_Admission_Prediction.csv
+  test_path: C:\Users\VIMALA P T\OneDrive\Documents\Python anaconda\Ineuron\projects\MLOPS\Mlops-task\data\processed\test_Admission_Prediction.csv
   test_size: 0.2
 
 estimators:

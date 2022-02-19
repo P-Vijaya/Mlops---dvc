@@ -16,10 +16,10 @@ def split_and_saved_data(config_path):
     df = pd.read_csv(raw_data_path,sep=",")
     train,test = train_test_split(df,test_size=split_ratio,random_state=random_state)
     train.to_csv(train_data_path,sep=",",index=False,encoding="utf-8")
-    test.to_csv(train_data_path, sep=",", index=False, encoding="utf-8")
+    test.to_csv(test_data_path, sep=",", index=False, encoding="utf-8")
 
 if __name__=="__main__":
     args = argparse.ArgumentParser()
-    args.add_argument("--config", default="params.yaml")
+    args.add_argument("--config", default=r'C:\Users\VIMALA P T\OneDrive\Documents\Python anaconda\Ineuron\projects\MLOPS\Mlops-task\params.yaml')
     parsed_args = args.parse_args()
     split_and_saved_data(config_path=parsed_args.config)

@@ -15,7 +15,8 @@ def load_and_save(config_path):
 
 if __name__=="__main__":
     args = argparse.ArgumentParser()
-    args.add_argument("--config",default='../../Mlops-task/params.yaml')
+    #args.add_argument("--config",default='../../Mlops-task/params.yaml')
+    args.add_argument("--config", default=r'C:\Users\VIMALA P T\OneDrive\Documents\Python anaconda\Ineuron\projects\MLOPS\Mlops-task\params.yaml')
     parsed_args = args.parse_args()
     load_and_save(config_path=parsed_args.config)
 
