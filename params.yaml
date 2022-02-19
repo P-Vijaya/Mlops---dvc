@@ -4,10 +4,12 @@ base:
   target_col: Chance of Admit
 
 data_source:
-  s3_source: data_given/Admission_Prediction.csv
+  #s3_source: data_given/Admission_Prediction.csv
+  s3_source: C:\Users\VIMALA P T\OneDrive\Documents\Python anaconda\Ineuron\projects\MLOPS\Mlops-task\data_given\Admission_Prediction.csv
 
 load_data:
-  raw_dataset_csv: data/raw/Admission_Prediction.csv
+  #raw_dataset_csv: data/raw/Admission_Prediction.csv
+  raw_dataset_csv: C:\Users\VIMALA P T\OneDrive\Documents\Python anaconda\Ineuron\projects\MLOPS\Mlops-task\data\raw\Admission_Prediction.csv
 
 split_data:
   train_path: data/processed/train_Admission_Prediction.csv

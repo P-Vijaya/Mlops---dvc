@@ -9,7 +9,8 @@ def load_and_save(config_path):
     df = get_data(config_path)
     new_cols = [col.replace(" ","_")for col in df.columns]
     raw_data_path = config["load_data"]["raw_dataset_csv"]
-    raw_data_path = "../"+raw_data_path
+    #raw_data_path = "../"+raw_data_path
+    #raw_data_path = os.path.join(r"C:\Users\VIMALA P T\OneDrive\Documents\Python anaconda\Ineuron\projects\MLOPS\Mlops-task", raw_data_path)
     df.to_csv(raw_data_path,sep=",",index=False,header=new_cols)
 
 if __name__=="__main__":
