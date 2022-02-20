@@ -26,3 +26,11 @@ estimators:
       alpha: 0.9
       l1_ratio: 0.4
 model_dir: saved_models
+
+reports:
+  #params: report/params.json
+  params: C:\Users\VIMALA P T\OneDrive\Documents\Python anaconda\Ineuron\projects\MLOPS\Mlops-task\report\params.json
+  #scores: report/scores.json
+  scores: C:\Users\VIMALA P T\OneDrive\Documents\Python anaconda\Ineuron\projects\MLOPS\Mlops-task\report\scores.json
+
+webapp_model_dir: prediction_service/model/model.joblib

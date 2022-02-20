@@ -14,6 +14,10 @@ def split_and_saved_data(config_path):
     split_ratio = config["split_data"]["test_size"]
     random_state = config["base"]["random_state"]
     df = pd.read_csv(raw_data_path,sep=",")
+    ## to fill missing data
+    df['University_Rating'] = df['University_Rating'].fillna(df['University_Rating'].mode()[0])
+    df['TOEFL_Score'] = df['TOEFL_Score'].fillna(df['TOEFL_Score'].mean())
+    df['GRE_Score'] = df['GRE_Score'].fillna(df['GRE_Score'].mean())
     train,test = train_test_split(df,test_size=split_ratio,random_state=random_state)
     train.to_csv(train_data_path,sep=",",index=False,encoding="utf-8")
     test.to_csv(test_data_path, sep=",", index=False, encoding="utf-8")

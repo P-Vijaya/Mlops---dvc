@@ -1,7 +1,7 @@
 stages:
   load_data:
-    #cmd: python src/load_data.py --config=params.yaml
-    cmd: ../Mlops-task/src/load_data.py --config=params.yaml
+    cmd: python src/load_data.py --config=params.yaml
+    #cmd: ../Mlops-task/src/load_data.py --config=params.yaml
     deps:
       #- src/get_data.py
       - C:\Users\VIMALA P T\OneDrive\Documents\Python anaconda\Ineuron\projects\MLOPS\Mlops-task\src\get_data.py
@@ -29,8 +29,8 @@ stages:
   train_and_evaluate:
     cmd: python src/train_and_evaluate.py --config=params.yaml
     deps:
-      - data/processed/train_winequality.csv
-      - data/processed/test_winequality.csv
+      - data/processed/train_Admission_Prediction.csv
+      - data/processed/test_Admission_Prediction.csv
       - src/train_and_evaluate.py
     params:
       - estimators.ElasticNet.params.alpha
