@@ -21,11 +21,11 @@ split_data:
 estimators:
   ElasticNet:
     params:
-      # alpha: 0.88
-      # l1_ratio: 0.89
-      alpha: 0.9
-      l1_ratio: 0.4
-model_dir: saved_models
+       alpha: 0.88
+       l1_ratio: 0.89
+      #alpha: 0.9
+      #l1_ratio: 0.4
+model_dir: C:\Users\VIMALA P T\OneDrive\Documents\Python anaconda\Ineuron\projects\MLOPS\Mlops-task\saved_models
 
 reports:
   #params: report/params.json
