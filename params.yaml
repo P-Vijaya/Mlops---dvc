@@ -33,4 +33,5 @@ reports:
   #scores: report/scores.json
   scores: C:\Users\VIMALA P T\OneDrive\Documents\Python anaconda\Ineuron\projects\MLOPS\Mlops-task\report\scores.json
 
-webapp_model_dir: prediction_service/model/model.joblib
+#webapp_model_dir: prediction_service/model/model.joblib
+webapp_model_dir: C:\Users\VIMALA P T\OneDrive\Documents\Python anaconda\Ineuron\projects\MLOPS\Mlops-task\prediction_service\model\model.joblib
